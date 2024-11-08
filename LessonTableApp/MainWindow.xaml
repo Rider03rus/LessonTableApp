@@ -1,0 +1,36 @@
+﻿<Window x:Class="LessonTableApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Расписание занятий" Height="400" Width="600">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Панель кнопок для дней недели -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+            <Button Content="Понедельник" Width="80" Margin="5" Click="Pn_Click"/>
+            <Button Content="Вторник" Width="80" Margin="5" Click="Vt_Click"/>
+            <Button Content="Среда" Width="80" Margin="5" Click="Sr_Click"/>
+            <Button Content="Четверг" Width="80" Margin="5" Click="Ch_Click"/>
+            <Button Content="Пятница" Width="80" Margin="5" Click="Fr_Click"/>
+            <Button Content="Суббота" Width="80" Margin="5" Click="Su_Click"/>
+        </StackPanel>
+
+        <!-- Секция для отображения расписания -->
+        <ListBox x:Name="LessonsListBox" Grid.Row="1" Margin="5">
+            <!-- Здесь будут выводиться текстовые данные о занятиях -->
+        </ListBox>
+
+        <!-- Нижняя панель кнопок -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2" Margin="0,10,0,0">
+            <Button Content="Добавить" Width="100" Margin="5" Click="Add_Click"/>
+            <Button Content="Удалить" Width="100" Margin="5" Click="Delete_Click"/>
+            <Button Content="Изменить" Width="100" Margin="5" Click="Change_Click"/>
+            <Button Content="Показать Все" Width="100" Margin="5" Click="Show_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
