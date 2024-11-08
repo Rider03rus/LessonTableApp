@@ -16,19 +16,6 @@ namespace LessonTableApp
         public LessonTable() { }
         public LessonTable(List<Lesson> lessons) { Lessons = Sort(lessons); }
 
-        /*
-        public List<Lesson> Sort(List<Lesson> lessons)
-        {
-            var sortlessons = lessons
-           .OrderBy(lesson => lesson.Day)
-           .ThenBy(lesson => lesson.Time)
-           .ToList();
-
-
-            return sortlessons;
-
-        }
-        */
 
   
 
@@ -41,7 +28,7 @@ namespace LessonTableApp
                 {
                     if (CompareLesson(lessons[j], lessons[j + 1]) > 0)
                     {
-                        // Обмен уроков
+  
                         var temp = lessons[j];
                         lessons[j] = lessons[j + 1];
                         lessons[j + 1] = temp;
@@ -52,7 +39,6 @@ namespace LessonTableApp
             return lessons;
         }
 
-        // Метод для сравнения двух уроков по дню недели и времени
         public int CompareLesson(Lesson l1, Lesson l2)
         {
 
@@ -67,15 +53,15 @@ namespace LessonTableApp
                 return -1;
             else if (l1day > l2day)
                 return 1;
-            else // Если дни недели одинаковые, сравниваем по времени занятий
+            else 
                 return l1time.CompareTo(l2time);
         }
 
         public TimeSpan ConvertTime(string x)
         {
-            TimeSpan ts = new TimeSpan(int.Parse(x.Split(':')[0]),    // hours
-               int.Parse(x.Split(':')[1]),    // minutes
-               0   // seconds
+            TimeSpan ts = new TimeSpan(int.Parse(x.Split(':')[0]),    
+               int.Parse(x.Split(':')[1]),    
+               0  
                );
             return ts;
 

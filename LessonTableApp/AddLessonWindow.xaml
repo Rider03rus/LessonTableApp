@@ -19,9 +19,9 @@
             <Button Content="Суббота" Width="80" Margin="5" Click="Su_Click"/>
         </StackPanel>
 
-    
+
         <ListBox x:Name="LessonsListBox" Grid.Row="1" Margin="5">
-            
+
         </ListBox>
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Grid.Row="2" Margin="0,10,0,0">

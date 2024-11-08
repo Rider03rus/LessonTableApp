@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfLesson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Lesson>
+    <Day>ср</Day>
+    <Time>13:00</Time>
+    <Name>География</Name>
+    <Audience>101</Audience>
+  </Lesson>
+  <Lesson>
+    <Day>чт</Day>
+    <Time>9:40</Time>
+    <Name>География</Name>
+    <Audience>101</Audience>
+  </Lesson>
+  <Lesson>
+    <Day>чт</Day>
+    <Time>11:20</Time>
+    <Name>Математика</Name>
+    <Audience>104</Audience>
+  </Lesson>
+  <Lesson>
+    <Day>сб</Day>
+    <Time>8:00</Time>
+    <Name>География</Name>
+    <Audience>101</Audience>
+  </Lesson>
+</ArrayOfLesson>

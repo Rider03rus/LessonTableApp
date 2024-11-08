@@ -20,7 +20,7 @@ namespace LessonTableApp
         public string Audience { get { return audience; } set { audience = value; } }
 
         public Lesson() { }
-        public Lesson(string name, string day, string time, string audience)
+        public Lesson( string day, string time, string name, string audience)
         {
             Name = name; Day = day; Time = time; Audience = audience;
         }
